@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@color/color"
         android:padding="20sp"
-        android:text="ECO ENERGY"
+        android:text="@string/eco_energy"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="36sp"
@@ -37,33 +37,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20sp"
-            android:text="Formulario"
+            android:text="@string/formulario"
             android:textColor="@color/color"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et1"
             style="@style/style_edittext"
-            android:hint="Nombre"
+            android:autofillHints="nombre"
+            android:hint="@string/nombre"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/et2"
             style="@style/style_edittext"
-            android:hint="Direccion"
+            android:autofillHints="direccion"
+            android:hint="@string/direccion"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/et3"
             style="@style/style_edittext"
-            android:hint="Telefono"
+            android:autofillHints="telefono"
+            android:hint="@string/telefono"
             android:inputType="phone" />
 
         <EditText
             android:id="@+id/et4"
             style="@style/style_edittext"
+            android:autofillHints="correo"
             android:inputType="textEmailAddress"
-            android:text="Correo" />
+            android:hint="@string/correo" />
 
 
         <RadioGroup
@@ -76,19 +80,19 @@
                 android:id="@+id/rd1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Casa" />
+                android:text="@string/casa" />
 
             <RadioButton
                 android:id="@+id/rd2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apartamento" />
+                android:text="@string/apartamento" />
 
             <RadioButton
                 android:id="@+id/rd3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rural" />
+                android:text="@string/rural" />
 
         </RadioGroup>
 
@@ -101,14 +105,13 @@
                 android:id="@+id/cb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Paneles Solares" />
+                android:text="@string/paneles_solares" />
 
             <CheckBox
                 android:id="@+id/cb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aerogeneradores" />
+                android:text="@string/aerogeneradores" />
 
         </LinearLayout>
 
@@ -116,7 +119,7 @@
             android:id="@+id/cb3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Otros sistemas de energias renovables" />
+            android:text="@string/otros" />
 
         <Button
             android:id="@+id/btn_eviar"
@@ -124,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
             android:backgroundTint="@color/color"
-            android:text="Enviar"
+            android:text="@string/enviar"
             android:textSize="26sp"
             app:cornerRadius="15sp" />
     </LinearLayout>
@@ -134,8 +137,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color"
+        android:textColor="@color/white"
         android:padding="10sp"
-        android:text="Todos a la U"
+        android:text="@string/todos_a_la_u"
         android:textAlignment="center"
         android:textSize="26sp"
         android:textStyle="bold"
